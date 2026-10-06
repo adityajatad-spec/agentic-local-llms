@@ -1,0 +1,19 @@
+\begin{tabular}{lcccccc}
+\toprule
+Method & Run & Accuracy (95\% CI) & Tokens & $\times$CoT$^\ast$ & $\Delta$ vs CoT$^\ast$ & $p$ (Holm) \\
+\midrule
+Direct answer & 007 & 19.3 [15.0, 24.0] & 127 & 0.14 & -60.3 & $<$0.001 \\
+Chain-of-thought (CoT) & 007 & 79.7 [75.0, 84.0] & 937 & 1.00 & -- & -- \\
+Self-Refine & 007 & 79.7 [75.0, 84.0] & 4280 & 4.57 & +0.0 & 1.000 \\
+Reflection memory & 007 & 80.0 [75.7, 84.3] & 1015 & 1.08 & +0.3 & 1.000 \\
+ReAct, print-only tool & 007 & 68.3 [63.3, 73.3] & 1709 & 1.82 & -11.3 & $<$0.001 \\
+ReAct, REPL tool & 014 & 75.3 [70.7, 80.3] & 1934 & 2.08 & -3.0 & 0.759 \\
+ReAct, native calls & 014 & 73.3 [68.3, 78.3] & 1951 & 2.09 & -5.0 & 0.314 \\
+Always-on pipeline & 007 & 57.7 [52.0, 63.0] & 3201 & 3.42 & -22.0 & $<$0.001 \\
+Always-on, native calls & 014 & 61.0 [55.7, 66.3] & 3404 & 3.65 & -17.3 & $<$0.001 \\
+Adaptive controller$^\ddagger$ & 023+007 & 73.3 [68.0, 78.3] & 4071 & 4.34 & -6.3 & 0.048 \\
+Self-consistency@5 & 023 & 83.0 [78.7, 87.0] & 4409 & 4.76 & +3.0 & 0.702 \\
+Thinking mode & 018 & 90.0 [86.3, 93.3] & 4457 & 4.58 & +10.3 & $<$0.001 \\
+Gate $\rightarrow$ thinking$^\ddagger$ & 023+018 & 90.0 [86.3, 93.3] & 5042 & 5.18 & +10.3 & $<$0.001 \\
+\bottomrule
+\end{tabular}

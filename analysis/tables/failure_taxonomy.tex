@@ -1,0 +1,16 @@
+\begin{tabular}{llcccccccc}
+\toprule
+Model & Method & Wrong & Trunc. & Loop & No ans. & Verif. override & Escal. harm & Tool err. & Reasoning \\
+\midrule
+Qwen3-8B & CoT & 61 & 14 & 0 & 3 & 0 & 0 & 0 & 44 \\
+ & ReAct, REPL & 74 & 0 & 0 & 0 & 0 & 0 & 11 & 63 \\
+ & Always-on & 127 & 4 & 1 & 0 & 37 & 0 & 47 & 38 \\
+ & Adaptive & 80 & 3 & 1 & 0 & 14 & 19 & 26 & 17 \\
+ & Thinking & 30 & 8 & 0 & 2 & 0 & 0 & 0 & 20 \\
+Llama-3.1-8B & CoT & 154 & 17 & 0 & 0 & 0 & 0 & 0 & 137 \\
+ & ReAct, print-only & 286 & 2 & 260 & 0 & 0 & 0 & 1 & 23 \\
+ & ReAct, native & 201 & 3 & 0 & 0 & 0 & 0 & 54 & 144 \\
+ & Always-on & 194 & 10 & 44 & 0 & 19 & 0 & 45 & 76 \\
+ & Adaptive & 152 & 15 & 30 & 0 & 10 & 19 & 31 & 47 \\
+\bottomrule
+\end{tabular}

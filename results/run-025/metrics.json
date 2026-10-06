@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "task": "gsmhard",
+    "n": 300,
+    "verifier": "grounded",
+    "seed": 42,
+    "sampling": "per-request seeds",
+    "hypothesis": "Seed-fix: CoT + SC@5 on GSM-Hard for rebuilding Qwen GSM-Hard adaptive",
+    "duration_s": 390.9472301006317
+  },
+  "methods": {
+    "cot": {
+      "n": 300,
+      "accuracy": 0.7733333333333333,
+      "acc_ci95": [
+        0.7233333333333334,
+        0.8166666666666667
+      ],
+      "tokens_per_problem": 463.56666666666666,
+      "latency_s_mean": 25.73989169836044,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 1.668224635075861,
+      "wall_s": 25.906906843185425
+    },
+    "sc5": {
+      "n": 300,
+      "accuracy": 0.77,
+      "acc_ci95": [
+        0.72,
+        0.8166666666666667
+      ],
+      "tokens_per_problem": 2325.4966666666664,
+      "latency_s_mean": 144.77722380479176,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.3311120635161808,
+      "wall_s": 144.96894240379333
+    }
+  }
+}

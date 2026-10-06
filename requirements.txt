@@ -1,0 +1,5 @@
+numpy
+matplotlib
+datasets
+modal
+vllm  # installed in the Modal image, not required locally

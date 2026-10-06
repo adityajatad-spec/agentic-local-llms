@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "task": "math",
+    "n": 20,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "PILOT n=20: native tool calling (hermes parser) + REPL tool, Qwen3-8B MATH-500",
+    "duration_s": 404.48719120025635
+  },
+  "methods": {
+    "cot": {
+      "n": 20,
+      "accuracy": 0.9,
+      "acc_ci95": [
+        0.75,
+        1.0
+      ],
+      "tokens_per_problem": 958.6,
+      "latency_s_mean": 11.162963771820069,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.9388691842269977,
+      "wall_s": 50.633169412612915
+    },
+    "react_repl": {
+      "n": 20,
+      "accuracy": 0.9,
+      "acc_ci95": [
+        0.75,
+        1.0
+      ],
+      "tokens_per_problem": 2310.6,
+      "latency_s_mean": 7.71645495891571,
+      "tool_validity": 0.896551724137931,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.3895092183848351,
+      "wall_s": 48.39518642425537
+    },
+    "react_native": {
+      "n": 20,
+      "accuracy": 0.85,
+      "acc_ci95": [
+        0.7,
+        1.0
+      ],
+      "tokens_per_problem": 2090.55,
+      "latency_s_mean": 7.794693720340729,
+      "tool_validity": 0.64,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.4065915668125612,
+      "wall_s": 48.17196488380432
+    }
+  }
+}

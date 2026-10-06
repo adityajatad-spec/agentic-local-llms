@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "task": "math",
+    "n": 300,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "Gated routing (rerun of run-011, split a): CoT + SC@5",
+    "duration_s": 1193.2027127742767,
+    "merged_from": [
+      "results/run-018-a",
+      "results/run-018-b",
+      "results/run-018-c"
+    ],
+    "partial": false
+  },
+  "methods": {
+    "cot": {
+      "n": 300,
+      "accuracy": 0.7966666666666666,
+      "acc_ci95": [
+        0.75325,
+        0.84
+      ],
+      "tokens_per_problem": 973.51,
+      "latency_s_mean": 89.24222095568975,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.8183446155321124,
+      "wall_s": 89.4084701538086
+    },
+    "sc5": {
+      "n": 300,
+      "accuracy": 0.82,
+      "acc_ci95": [
+        0.7766666666666666,
+        0.8633333333333333
+      ],
+      "tokens_per_problem": 4466.846666666666,
+      "latency_s_mean": 437.68496814092,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.1835746917661527,
+      "wall_s": 438.011522769928
+    },
+    "think": {
+      "n": 300,
+      "accuracy": 0.9,
+      "acc_ci95": [
+        0.8633333333333333,
+        0.9333333333333333
+      ],
+      "tokens_per_problem": 4457.4,
+      "latency_s_mean": 844.3428765130043,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.20191142818683538,
+      "wall_s": 844.4661424160004
+    },
+    "gate_think": {
+      "n": 300,
+      "accuracy": 0.8833333333333333,
+      "acc_ci95": [
+        0.8433333333333334,
+        0.9166666666666666
+      ],
+      "tokens_per_problem": 5090.086666666667,
+      "latency_s_mean": 433.44052848021187,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.31666666666666665,
+      "acc_per_1k_tokens": 0.17353993972597714,
+      "wall_s": 843.6586203575134
+    }
+  }
+}

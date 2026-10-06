@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "task": "math",
+    "n": 30,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "PILOT n=30: validate harness/extraction on Llama-3.1-8B-Instruct, MATH-500",
+    "duration_s": 1286.4805090427399
+  },
+  "methods": {
+    "direct": {
+      "n": 30,
+      "accuracy": 0.2,
+      "acc_ci95": [
+        0.06666666666666667,
+        0.3333333333333333
+      ],
+      "tokens_per_problem": 124.46666666666667,
+      "latency_s_mean": 0.637419867515564,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 1.6068559185859668,
+      "wall_s": 0.6603813171386719
+    },
+    "cot": {
+      "n": 30,
+      "accuracy": 0.26666666666666666,
+      "acc_ci95": [
+        0.1,
+        0.4666666666666667
+      ],
+      "tokens_per_problem": 1291.4666666666667,
+      "latency_s_mean": 60.58172573248545,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.20648358455502785,
+      "wall_s": 60.60510492324829
+    },
+    "react": {
+      "n": 30,
+      "accuracy": 0.06666666666666667,
+      "acc_ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "tokens_per_problem": 9485.2,
+      "latency_s_mean": 105.09135382970175,
+      "tool_validity": 0.8617511520737328,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.007028493512700487,
+      "wall_s": 121.66584658622742
+    },
+    "self_refine": {
+      "n": 30,
+      "accuracy": 0.26666666666666666,
+      "acc_ci95": [
+        0.13333333333333333,
+        0.43333333333333335
+      ],
+      "tokens_per_problem": 6524.0,
+      "latency_s_mean": 146.6869252681732,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.04087471898630697,
+      "verifier_recall": 0.4117647058823529,
+      "verifier_false_reject_rate": 0.0,
+      "wall_s": 146.7111337184906
+    },
+    "reflexion": {
+      "n": 30,
+      "accuracy": 0.3333333333333333,
+      "acc_ci95": [
+        0.16666666666666666,
+        0.5
+      ],
+      "tokens_per_problem": 1385.7666666666667,
+      "latency_s_mean": 59.83744036356608,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.2405407355735694,
+      "wall_s": 59.864904165267944
+    },
+    "always_on": {
+      "n": 30,
+      "accuracy": 0.23333333333333334,
+      "acc_ci95": [
+        0.1,
+        0.4
+      ],
+      "tokens_per_problem": 11805.533333333333,
+      "latency_s_mean": 139.661731505394,
+      "tool_validity": 0.9019607843137255,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.019764743086575224,
+      "verifier_recall": 0.5714285714285714,
+      "verifier_false_reject_rate": 0.25,
+      "wall_s": 182.76686358451843
+    },
+    "adaptive": {
+      "n": 30,
+      "accuracy": 0.26666666666666666,
+      "acc_ci95": [
+        0.13333333333333333,
+        0.43333333333333335
+      ],
+      "tokens_per_problem": 13940.733333333334,
+      "latency_s_mean": 279.62757453123726,
+      "tool_validity": 0.915,
+      "escalation_rate": 0.9,
+      "acc_per_1k_tokens": 0.019128596773962152,
+      "verifier_recall": 0.6,
+      "verifier_false_reject_rate": 0.3333333333333333,
+      "wall_s": 319.9761130809784
+    }
+  }
+}

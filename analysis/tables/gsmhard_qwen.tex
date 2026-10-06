@@ -1,0 +1,14 @@
+\begin{tabular}{lcccccc}
+\toprule
+Method & Run & Accuracy (95\% CI) & Tokens & $\times$CoT$^\ast$ & $\Delta$ vs CoT$^\ast$ & $p$ (Holm) \\
+\midrule
+Direct answer & 016 & 12.0 [8.3, 15.7] & 115 & 0.25 & -64.7 & $<$0.001 \\
+Chain-of-thought (CoT) & 016 & 76.7 [72.0, 81.0] & 458 & 1.00 & -- & -- \\
+ReAct, print-only tool & 016 & 72.3 [67.0, 77.3] & 961 & 2.10 & -4.3 & 0.147 \\
+ReAct, REPL tool & 016 & 76.7 [71.7, 81.0] & 1000 & 2.18 & +0.0 & 1.000 \\
+ReAct, native calls & 016 & 69.7 [64.7, 75.0] & 996 & 2.17 & -7.0 & 0.019 \\
+Always-on pipeline & 016 & 79.7 [75.0, 84.3] & 1854 & 4.05 & +3.0 & 0.751 \\
+Adaptive controller$^\ddagger$ & 025+016 & 79.3 [75.0, 84.0] & 2054 & 4.48 & +2.7 & 0.751 \\
+Self-consistency@5 & 025 & 77.0 [72.0, 81.7] & 2325 & 5.02 & -0.3 & 1.000 \\
+\bottomrule
+\end{tabular}

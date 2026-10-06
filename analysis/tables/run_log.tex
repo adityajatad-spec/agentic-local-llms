@@ -1,0 +1,34 @@
+\begin{tabular}{llp{10.5cm}}
+\toprule
+Run & Status & Note \\
+\midrule
+run-001 & failed & Baselines: direct vs CoT vs ReAct+python tool on Qwen3-8B, GSM8K-300 \\
+run-002 & failed & Baselines: direct vs CoT vs ReAct+python tool on Qwen3-8B, GSM8K-300 (retry after CUDA fork fix) \\
+run-003 & completed & Baselines: direct vs CoT vs ReAct+python tool on Qwen3-8B, GSM8K-300 (single seed; direct truncated at 16 ... \\
+run-004 & completed & All 7 methods, Qwen3-8B GSM8K-300, grounded verifier \\
+run-005 & failed & All 7 methods, Qwen3-8B, MATH-500 (300 test) \\
+run-006 & completed & PILOT n=60 MATH-500 validating harness fixes \\
+run-007 & completed & MAIN: 7 methods, Qwen3-8B, MATH-500 (300 test + 100 held-out), validated harness \\
+run-008 & completed & Verifier ablation, always-on pipeline, same 300 MATH-500 problems, shared memory \\
+run-009 & completed & PILOT n=30 Llama-3.1-8B-Instruct MATH-500: harness validation \\
+run-010 & failed & Llama-3.1-8B all 7 methods MATH-500 \\
+run-011 & failed & Qwen3-8B gated routing (cot, sc5, think, gate\_think) \\
+run-012 & completed & PILOT n=20 Qwen3-8B native tool calling (hermes) + stateful REPL tool \\
+run-013 & completed & PILOT n=20 Llama-3.1-8B native tool calling (llama3\_json) + stateful REPL tool \\
+run-014 & completed & \#3 native tool calling, Qwen3-8B MATH-500 (server backend) \\
+run-015 & completed & \#3 native tool calling, Llama-3.1-8B MATH-500 \\
+run-016 & completed & \#4 GSM-Hard Qwen3-8B (300 test + 100 held-out) \\
+run-017 & completed & Llama-3.1-8B all 7 methods MATH-500 (rerun of run-010; merged from 3 parallel detached jobs, A100-80GB) \\
+run-018 & completed & Qwen3-8B gated routing MATH-500 (rerun of run-011; merged from 3 jobs): cot .797 (974 tok), sc5 .820 (4467), ... \\
+run-019 & failed & Seed-fix rerun (CoT, SC@5, thinking; Qwen3-8B) \\
+run-019-pilot & completed & PILOT n=10: verify per-request sampling seeds \\
+run-020 & failed & Seed-fix rerun (gate$\rightarrow$thinking; Qwen3-8B) \\
+run-021 & failed & Seed-fix rerun (adaptive; Qwen3-8B) \\
+run-022 & failed & Seed-fix rerun (adaptive; Llama-3.1-8B) \\
+run-023 & completed & Seed-fix: CoT + SC@5 with independent per-request seeds, Qwen3-8B MATH-500 \\
+run-024 & completed & Seed-fix: CoT + SC@5 with independent seeds, Llama-3.1-8B MATH-500 \\
+run-025 & completed & Seed-fix: CoT + SC@5 with independent seeds, Qwen3-8B GSM-Hard \\
+run-026 & completed & Extra seed (2): CoT + thinking mode, Qwen3-8B MATH-500 \\
+run-027 & completed & Extra seed (3): CoT + thinking mode, Qwen3-8B MATH-500 \\
+\bottomrule
+\end{tabular}

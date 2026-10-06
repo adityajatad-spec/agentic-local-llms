@@ -1,0 +1,9 @@
+\begin{tabular}{lcccccccc}
+\toprule
+Verifier & Pre-verifier & Final & Flagged & Fixed & Broke & Recall & False-reject & +CoT fallback$^\dagger$ \\
+\midrule
+None & 65.0 & 65.0 & -- & -- & -- & -- & -- & -- \\
+Grounded (code re-derivation) & 66.7 & 59.3 & 77 & 15 & 37 & 0.400 & 0.185 & 75.3 \\
+Intrinsic (self-critique) & 67.3 & 75.7 & 199 & 38 & 13 & 0.694 & 0.649 & 76.7 \\
+\bottomrule
+\end{tabular}

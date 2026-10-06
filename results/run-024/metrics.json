@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "task": "math",
+    "n": 300,
+    "verifier": "grounded",
+    "seed": 42,
+    "sampling": "per-request seeds",
+    "hypothesis": "Seed-fix: CoT + SC@5 (independent seeds) for rebuilding Llama adaptive; new Llama SC baseline",
+    "duration_s": 614.9754853248596
+  },
+  "methods": {
+    "cot": {
+      "n": 300,
+      "accuracy": 0.5,
+      "acc_ci95": [
+        0.44666666666666666,
+        0.5567499999999999
+      ],
+      "tokens_per_problem": 802.02,
+      "latency_s_mean": 77.367989590168,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.6234258497294333,
+      "wall_s": 77.48264408111572
+    },
+    "sc5": {
+      "n": 300,
+      "accuracy": 0.5633333333333334,
+      "acc_ci95": [
+        0.51,
+        0.6167499999999999
+      ],
+      "tokens_per_problem": 3742.64,
+      "latency_s_mean": 382.31705124775567,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.15051763817341057,
+      "wall_s": 382.4524435997009
+    }
+  }
+}

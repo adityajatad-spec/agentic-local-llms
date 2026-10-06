@@ -1,0 +1,12 @@
+\begin{tabular}{lccc}
+\toprule
+Strategy & Accuracy & Tokens/problem & Escalated \\
+\midrule
+CoT (run 018) & 79.7 & 974 & -- \\
+Self-consistency@5 (run 023) & 83.0 & 4409 & -- \\
+Always thinking (run 018) & 90.0 & 4457 & 100\% \\
+Gate: 3 agree + confidence $\rightarrow$ thinking & 90.0 & 5042 & 33\% \\
+Gate: 3 agree $\rightarrow$ thinking & 89.7 & 4725 & 27\% \\
+Gate: 2 agree $\rightarrow$ thinking & 89.7 & 3624 & 23\% \\
+\bottomrule
+\end{tabular}

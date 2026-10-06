@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "rebuilt_from": "run-024",
+    "task": "math",
+    "specs": [
+      "adaptive=run-017:always_on"
+    ],
+    "distinct5_samples": 300,
+    "n": 300,
+    "note": "gate recomputed from independent SC@5 samples; escalations from clean source runs"
+  },
+  "methods": {
+    "adaptive": {
+      "n": 300,
+      "accuracy": 0.49333333333333335,
+      "acc_ci95": [
+        0.43666666666666665,
+        0.55
+      ],
+      "tokens_per_problem": 9519.783333333333,
+      "latency_s_mean": 0.0,
+      "tool_validity": 0.8999274836838289,
+      "escalation_rate": 0.68,
+      "acc_per_1k_tokens": 0.05182190771148503,
+      "verifier_recall": 0.35,
+      "verifier_false_reject_rate": 0.35714285714285715
+    }
+  }
+}

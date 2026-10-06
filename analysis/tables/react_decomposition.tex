@@ -1,0 +1,13 @@
+\begin{tabular}{llcccccc}
+\toprule
+Model & Tool / format & Accuracy & CoT (same run) & Tokens & Calls/problem & Valid calls & Hit step limit \\
+\midrule
+Qwen3-8B & print-only & 68.3 & 79.7 & 1709 & 1.3 & 88\% & 2\% \\
+ & REPL & 75.3 & 78.3 & 1934 & 1.4 & 85\% & 2\% \\
+ & native & 73.3 & 78.3 & 1951 & 1.1 & 71\% & 7\% \\
+\midrule
+Llama-3.1-8B & print-only & 4.7 & 48.7 & 9160 & 7.2 & 97\% & 87\% \\
+ & REPL & 21.3 & 52.0 & 11466 & 7.3 & 96\% & 85\% \\
+ & native & 33.0 & 52.0 & 1504 & 1.6 & 49\% & 20\% \\
+\bottomrule
+\end{tabular}

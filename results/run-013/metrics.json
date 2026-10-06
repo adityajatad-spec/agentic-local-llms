@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "task": "math",
+    "n": 20,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "PILOT n=20: native tool calling (llama3_json parser) + REPL tool, Llama-3.1-8B MATH-500",
+    "duration_s": 522.2567591667175
+  },
+  "methods": {
+    "cot": {
+      "n": 20,
+      "accuracy": 0.65,
+      "acc_ci95": [
+        0.45,
+        0.85
+      ],
+      "tokens_per_problem": 879.15,
+      "latency_s_mean": 9.47110915184021,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.7393505090143889,
+      "wall_s": 47.08870887756348
+    },
+    "react_repl": {
+      "n": 20,
+      "accuracy": 0.15,
+      "acc_ci95": [
+        0.0,
+        0.35
+      ],
+      "tokens_per_problem": 12395.05,
+      "latency_s_mean": 30.206283473968504,
+      "tool_validity": 0.9655172413793104,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.012101605076219943,
+      "wall_s": 70.61903595924377
+    },
+    "react_native": {
+      "n": 20,
+      "accuracy": 0.3,
+      "acc_ci95": [
+        0.1,
+        0.5
+      ],
+      "tokens_per_problem": 908.25,
+      "latency_s_mean": 2.1376986622810366,
+      "tool_validity": 0.95,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.3303055326176713,
+      "wall_s": 7.242714881896973
+    }
+  }
+}

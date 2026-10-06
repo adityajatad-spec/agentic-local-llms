@@ -1,0 +1,26 @@
+{
+  "run-007:react": {
+    "observations": 583,
+    "empty": 108,
+    "empty_rate": 0.18524871355060035,
+    "problems_with_empty": 82,
+    "error_rate_with_empty": 0.6951219512195121,
+    "error_rate_overall": 0.31666666666666665
+  },
+  "run-007:always_on": {
+    "observations": 410,
+    "empty": 105,
+    "empty_rate": 0.25609756097560976,
+    "problems_with_empty": 91,
+    "error_rate_with_empty": 0.5494505494505495,
+    "error_rate_overall": 0.42333333333333334
+  },
+  "run-017:react": {
+    "observations": 2176,
+    "empty": 21,
+    "empty_rate": 0.009650735294117647,
+    "problems_with_empty": 3,
+    "error_rate_with_empty": 1.0,
+    "error_rate_overall": 0.9533333333333334
+  }
+}

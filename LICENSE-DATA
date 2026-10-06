@@ -1,0 +1,10 @@
+The experiment results, run logs, tables, and figures in this repository
+(results/, run_log/, analysis/tables/, analysis/figures/, and analysis/*.json)
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by/4.0/
+
+Model outputs in results/ were produced by Qwen3-8B and Llama-3.1-8B-Instruct;
+their use remains subject to the respective model licenses.

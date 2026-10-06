@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "rebuilt_from": "run-023",
+    "task": "math",
+    "specs": [
+      "adaptive=run-007:always_on",
+      "gate_think=run-018:think"
+    ],
+    "distinct5_samples": 299,
+    "n": 300,
+    "note": "gate recomputed from independent SC@5 samples; escalations from clean source runs"
+  },
+  "methods": {
+    "adaptive": {
+      "n": 300,
+      "accuracy": 0.7333333333333333,
+      "acc_ci95": [
+        0.68,
+        0.7833333333333333
+      ],
+      "tokens_per_problem": 4070.9466666666667,
+      "latency_s_mean": 0.0,
+      "tool_validity": 0.7735849056603774,
+      "escalation_rate": 0.35,
+      "acc_per_1k_tokens": 0.1801382806947442,
+      "verifier_recall": 0.38181818181818183,
+      "verifier_false_reject_rate": 0.3111111111111111
+    },
+    "gate_think": {
+      "n": 300,
+      "accuracy": 0.9,
+      "acc_ci95": [
+        0.8633333333333333,
+        0.9333333333333333
+      ],
+      "tokens_per_problem": 5041.59,
+      "latency_s_mean": 0.0,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.3333333333333333,
+      "acc_per_1k_tokens": 0.1785151113041719
+    },
+    "gate2_think": {
+      "n": 300,
+      "accuracy": 0.8966666666666666,
+      "acc_ci95": [
+        0.86,
+        0.93
+      ],
+      "tokens_per_problem": 3624.1266666666666,
+      "latency_s_mean": 0.0,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.23333333333333334,
+      "acc_per_1k_tokens": 0.24741592917098187
+    },
+    "gate3noconf_think": {
+      "n": 300,
+      "accuracy": 0.8966666666666666,
+      "acc_ci95": [
+        0.86,
+        0.93
+      ],
+      "tokens_per_problem": 4724.546666666667,
+      "latency_s_mean": 0.0,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.27,
+      "acc_per_1k_tokens": 0.189788932130349
+    }
+  }
+}

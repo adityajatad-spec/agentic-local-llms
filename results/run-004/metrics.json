@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "task": "gsm8k",
+    "n": 300,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "Fixed baselines + all methods (self_refine, reflexion, always_on, adaptive; grounded verifier) on Qwen3-8B GSM8K-300",
+    "duration_s": 1158.3830559253693
+  },
+  "methods": {
+    "direct": {
+      "n": 300,
+      "accuracy": 0.14,
+      "acc_ci95": [
+        0.10333333333333333,
+        0.18
+      ],
+      "tokens_per_problem": 98.91666666666667,
+      "latency_s_mean": 1.17381867090861,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 1.4153327716933446,
+      "wall_s": 8.110883474349976
+    },
+    "cot": {
+      "n": 300,
+      "accuracy": 0.9166666666666666,
+      "acc_ci95": [
+        0.8866666666666667,
+        0.95
+      ],
+      "tokens_per_problem": 353.07,
+      "latency_s_mean": 7.219201686382294,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 2.596274581999792,
+      "wall_s": 49.272502183914185
+    },
+    "react": {
+      "n": 300,
+      "accuracy": 0.6733333333333333,
+      "acc_ci95": [
+        0.62,
+        0.7266666666666667
+      ],
+      "tokens_per_problem": 442.42,
+      "latency_s_mean": 5.943203071753184,
+      "tool_validity": 1.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 1.5219324020915268,
+      "wall_s": 42.15286445617676
+    },
+    "self_refine": {
+      "n": 300,
+      "accuracy": 0.9266666666666666,
+      "acc_ci95": [
+        0.8966666666666666,
+        0.9566666666666667
+      ],
+      "tokens_per_problem": 1891.5366666666666,
+      "latency_s_mean": 22.494588310718537,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.48990150864993365,
+      "verifier_recall": 0.48,
+      "verifier_false_reject_rate": 0.007272727272727273,
+      "wall_s": 152.60073161125183
+    },
+    "reflexion": {
+      "n": 300,
+      "accuracy": 0.9233333333333333,
+      "acc_ci95": [
+        0.89325,
+        0.9533333333333334
+      ],
+      "tokens_per_problem": 476.2866666666667,
+      "latency_s_mean": 7.760219717025757,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 1.9386084011029772,
+      "wall_s": 52.639729261398315
+    },
+    "always_on": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "acc_ci95": [
+        0.8233333333333334,
+        0.9033333333333333
+      ],
+      "tokens_per_problem": 1124.5733333333333,
+      "latency_s_mean": 19.5539732670784,
+      "tool_validity": 0.9870550161812298,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.7706626513166476,
+      "verifier_recall": 0.9047619047619048,
+      "verifier_false_reject_rate": 0.06481481481481481,
+      "wall_s": 133.91155648231506
+    },
+    "adaptive": {
+      "n": 300,
+      "accuracy": 0.9066666666666666,
+      "acc_ci95": [
+        0.8733333333333333,
+        0.94
+      ],
+      "tokens_per_problem": 1070.85,
+      "latency_s_mean": 24.64121734539668,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.8466794291139438,
+      "wall_s": 166.0706434249878
+    }
+  }
+}

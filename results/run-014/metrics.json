@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen3-8B",
+    "task": "math",
+    "n": 300,
+    "verifier": "grounded",
+    "seed": 42,
+    "hypothesis": "#3 native tool calling, Qwen3-8B MATH-500: CoT vs text-ReAct+REPL vs native-ReAct+REPL vs always-on(native), forced final answer",
+    "duration_s": 1244.1388709545135
+  },
+  "methods": {
+    "cot": {
+      "n": 300,
+      "accuracy": 0.7833333333333333,
+      "acc_ci95": [
+        0.7333333333333333,
+        0.8300833333333332
+      ],
+      "tokens_per_problem": 931.7733333333333,
+      "latency_s_mean": 15.259235637187958,
+      "tool_validity": 0.0,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.84069086902394,
+      "wall_s": 137.91876101493835
+    },
+    "react_repl": {
+      "n": 300,
+      "accuracy": 0.7533333333333333,
+      "acc_ci95": [
+        0.7066666666666667,
+        0.8033333333333333
+      ],
+      "tokens_per_problem": 1934.1766666666667,
+      "latency_s_mean": 10.132464411258697,
+      "tool_validity": 0.8506024096385543,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.3894852762501874,
+      "wall_s": 191.40291285514832
+    },
+    "react_native": {
+      "n": 300,
+      "accuracy": 0.7333333333333333,
+      "acc_ci95": [
+        0.6833333333333333,
+        0.7833333333333333
+      ],
+      "tokens_per_problem": 1950.6233333333332,
+      "latency_s_mean": 10.038024395306905,
+      "tool_validity": 0.7076023391812866,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.3759482011733002,
+      "wall_s": 105.27052640914917
+    },
+    "always_on_native": {
+      "n": 300,
+      "accuracy": 0.61,
+      "acc_ci95": [
+        0.5566666666666666,
+        0.6633333333333333
+      ],
+      "tokens_per_problem": 3403.8733333333334,
+      "latency_s_mean": 23.6890446527799,
+      "tool_validity": 0.7192429022082019,
+      "escalation_rate": 0.0,
+      "acc_per_1k_tokens": 0.1792076085870802,
+      "verifier_recall": 0.4691358024691358,
+      "verifier_false_reject_rate": 0.20276497695852536,
+      "wall_s": 231.92971420288086
+    }
+  }
+}
