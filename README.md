@@ -1,8 +1,6 @@
 # Can Adaptive Planning, Tool Use, Memory, and Self-Verification Amplify Local LLMs on Complex Reasoning?
 
-**Aditya Sopan Jatad**, Independent Researcher · [aditya.jatad@gmail.com](mailto:aditya.jatad@gmail.com)
-
-📄 **Paper:** [`paper/agentic-local-llms-arxiv.pdf`](paper/agentic-local-llms-arxiv.pdf)
+**Anonymous submission.** Artifact accompanying a paper under double-blind review.
 
 This repository holds the complete research artifact for the paper: the agent harness and every prompt, per-problem outputs for all runs used in the paper, the full run log (failed runs included), and the scripts that regenerate every table, figure, and statistic. No number in the paper is entered by hand. All of them are computed from the files here.
 
@@ -105,8 +103,6 @@ Full tables with 95% confidence intervals, ×CoT ratios, and exact p-values are 
 
 ```
 agentic-local-llms/
-├── paper/
-│   └── agentic-local-llms-arxiv.pdf   # the paper
 ├── agent.py            # all methods, prompts, tools, memory, verifiers, gates
 ├── llm.py              # vLLM backends (offline engine and OpenAI-compatible server), batcher, CPU mock
 ├── data.py             # MATH-500 / GSM8K / GSM-Hard loaders, held-out and test slices, answer normalization
@@ -184,7 +180,7 @@ All methods live in [`agent.py`](agent.py) and are selected by name with `--meth
 ## Installation
 
 ```bash
-git clone https://github.com/adityajatad-spec/agentic-local-llms.git
+# download or clone this repository, then:
 cd agentic-local-llms
 python -m pip install -r requirements.txt   # vllm is only needed inside the Modal image
 ```
@@ -381,14 +377,7 @@ Every issue below was found, fixed, and logged. The affected runs are marked in 
 
 ## Citation
 
-```bibtex
-@misc{jatad2026agentic,
-  title  = {Can Adaptive Planning, Tool Use, Memory, and Self-Verification Amplify Local Large Language Models on Complex Reasoning?},
-  author = {Jatad, Aditya Sopan},
-  year   = {2026},
-  note   = {Code and data: https://github.com/adityajatad-spec/agentic-local-llms}
-}
-```
+Citation details will be added after review.
 
 ---
 
