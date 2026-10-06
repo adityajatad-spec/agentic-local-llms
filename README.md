@@ -55,3 +55,16 @@ Early runs reused one per-request seed for every sampled request, which correlat
 ## License
 
 Code is released under the MIT License (`LICENSE`). Results, run logs, tables, and figures are released under CC BY 4.0 (`LICENSE-DATA`). Model outputs remain subject to the Qwen3 and Llama 3.1 model licenses.
+
+## Citation
+
+If you use this code or these results, please cite the paper:
+
+```bibtex
+@misc{jatad2026agentic,
+  title  = {Can Adaptive Planning, Tool Use, Memory, and Self-Verification Amplify Local Large Language Models on Complex Reasoning?},
+  author = {Jatad, Aditya Sopan},
+  year   = {2026},
+  note   = {Code and data: https://github.com/adityajatad-spec/agentic-local-llms}
+}
+```
